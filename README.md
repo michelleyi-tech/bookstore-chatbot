@@ -1,6 +1,6 @@
 # Bookstore Chatbot
 
-This bookstore chatbot is a web-based chatbot with an interactive user interface built with `Streamlit`. It utilizes OpenAI's `GPT-3.5-turbo` as its model and `Weaviate` for its database.
+This bookstore chatbot is a web-based chatbot with an interactive user interface built with `Streamlit`. It utilizes OpenAI's `GPT-3.5-turbo` as its language model and `text-embedding-ada-002` as its text embedding model, and `Weaviate` for its database.
 
 This chatbot can handle users' questions about book recommendations and store policies. In addition, the chatbot can also help users add books to their shopping carts or remove books from their shopping carts.
 
