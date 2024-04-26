@@ -114,7 +114,7 @@ if prompt := (st.chat_input("What can I help you with today?")):
                 gql = vector_gql.format(input=book_title, limit=1)
                 df = conn.query(gql, ttl=None)
                 row = df.iloc[0]
-                if row["_additional.distance"] >= 0.15 or df.empty:
+                if row["_additional.distance"] >= 0.18 or df.empty:
                     respond = f"Sorry, we don't have {book_title} in our store. Is there another book you would like to purchase?"
                     st.session_state.messages.append({"role": "assistant", "content": respond})
                 else:
